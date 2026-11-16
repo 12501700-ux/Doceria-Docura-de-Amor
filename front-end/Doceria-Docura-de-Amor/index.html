@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doçura de Amor</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Links da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Link ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Menu principal -->
+    <header class="header-menu">
+        <!-- Logo -->
+        <a href="#" class="link-logo">
+            <img src="img/logo-docura-de-amor.png" class="img-logo" alt="Doçura de Amor">
+        </a>
+
+        <!-- Botão mobile -->
+        <button class="btn-menu-mobile" id="btnMenuMobile" type="button" aria-expanded="false" aria-label="Abrir menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Navegação -->
+        <div class="div-menu-principal" id="menuPrincipal">
+            <ul class="ul-menu-principal">
+                <!-- Início -->
+                <li class="item-menu">
+                    <a href="#" class="link-menu">INÍCIO</a>
+                </li>
+
+                <!-- Catálogo -->
+                <li class="item-menu item-dropdown">
+                    <button class="link-menu btn-dropdown" type="button" aria-expanded="false">
+                        CATÁLOGO
+                        <i class="bi bi-chevron-down seta-dropdown"></i>
+                    </button>
+                    <!-- Conteúdo do submenu -->
+                    <ul class="submenu" id="submenuCatalogo">
+                        <li><a href="#" data-sheet="cestas">Cestas</a></li>
+                        <li><a href="#" data-sheet="bolos-caseiros">Bolos Caseiros</a></li>
+                        <li><a href="#" data-sheet="bolo-festa">Bolo Festa</a></li>
+                        <li><a href="#" data-sheet="kit-festa">Kit Festa</a></li>
+                        <li><a href="#" data-sheet="caixinha-doces">Caixinha de Doces</a></li>
+                        <li><a href="#" data-sheet="cones">Cones Gourmet</a></li>
+                        <li><a href="#" data-sheet="pão-mel">Pão de Mel</a></li>
+                        <li><a href="#" data-sheet="brownie">Brownies</a></li>
+                        <li><a href="#" data-sheet="bolo-no-pote">Bolo no Pote</a></li>
+                        <li><a href="#" data-sheet="cookies">Cookies</a></li>
+                        <li><a href="#" data-sheet="copo-da-felicidade">Copo da Felicidade</a></li>
+                        <li><a href="#" data-sheet="trufas">Trufas e Docinhos</a></li>
+                        <li><a href="#" data-sheet="palha-italiana">Palha Italiana</a></li>
+                        <li><a href="#" data-sheet="picole">Picolé Gourmet</a></li>
+                        <li><a href="#" data-sheet="pudim">Pudim</a></li>
+                        <li><a href="#" data-sheet="salgados">Salgados</a></li>
+                    </ul>
+                </li>
+
+                <!-- Lojas -->
+                <li class="item-menu">
+                    <a href="#nossas-lojas" class="link-menu">LOJAS</a>
+                </li>
+
+                <!-- Nossa História -->
+                <li class="item-menu">
+                    <a href="#historia" class="link-menu">NOSSA HISTÓRIA</a>
+                </li>
+
+                <!-- Contato -->
+                <li class="item-menu">
+                    <a href="#" class="link-menu" data-sheet="contato">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Ícones -->
+        <div class="div-icones">
+            <!-- Modo Claro / Escuro -->
+            <button class="link-icone" id="btnTema" type="button" aria-label="Alternar tema">
+                <i class="bi bi-sun" id="iconeTema"></i>
+            </button>
+            <!-- Conta -->
+            <button class="link-icone" id="btnAbrirConta" type="button" aria-label="Minha conta">
+                <i class="bi bi-person"></i>
+            </button>
+            <!-- Carrinho/Sacola -->
+            <button class="link-icone" id="btnAbrirSacola" type="button" aria-label="Abrir sacola">
+                <i class="bi bi-bag-heart"></i>
+                <span class="badge-sacola" id="badgeSacola">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Introdução -->
+    <section class="sec-header">
+        <div class="conteudo-header">
+            <p class="subtitulo-header">CONFEITARIA ARTESANAL - BELO HORIZONTE E REGIÃO</p>
+            <h1 class="titulo-header">
+                Um pedacinho de <span>amor</span><br>em cada mordida.
+            </h1>
+            <p class="descricao-header">
+                Bolos artesanais, doces gourmet, cestas de café da manhã e kits festa preparados à mão, com todo o amor
+                do mundo, em Belo Horizonte. Escolha suas delícias favoritas em nosso site, faça seu pedido em poucos
+                cliques e espere o nosso abraço em forma de doce chegar até você!
+            </p>
+            <div class="botoes-header">
+                <a href="#catalogo" class="btn-catalogo">
+                    Ver o catálogo
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="informacoes-header">
+                <div class="info-header">
+                    <i class="bi bi-truck"></i>
+                    <span>Entrega em BH e região</span>
+                </div>
+                <div class="info-header">
+                    <i class="bi bi-clock"></i>
+                    <span>Encomendas pelo site</span>
+                </div>
+                <div class="info-header">
+                    <i class="bi bi-patch-check"></i>
+                    <span>Feito à mão, todos os dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="sec-catalogo" id="catalogo">
+        <div class="div-texto-catalogo">
+            <p class="texto-catalogo">NOSSOS PRODUTOS</p>
+            <h1 class="titulo-catalogo">Nossas delícias</h1>
+            <p class="descricao-catalogo">Um pedacinho de amor em cada mordida. Escolha a categoria e monte o seu pedido
+                do jeitinho que <br> você gosta.</p>
+        </div>
+
+        <div class="div-catalogo">
+            <!-- Cestas -->
+            <button type="button" class="card-categoria" data-id="cestas">
+                <img src="img/cesta-capa.png" class="img-capa-item" alt="Cestas">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Cestas</span>
+                </span>
+            </button>
+            <!-- Bolos caseiros -->
+            <button type="button" class="card-categoria" data-id="bolos-caseiros">
+                <img src="img/bolo_caseiro_capa.png" class="img-capa-item" alt="Bolos Caseiros">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Bolos Caseiros</span>
+                </span>
+            </button>
+            <!-- Bolos Festa -->
+            <button type="button" class="card-categoria" data-id="bolo-festa">
+                <img src="img/bolo_festa_docura_de_amor.png" class="img-capa-item" alt="Bolo Festa">
+                <span class="info-card">
+                    <span class="sabores-card">4 SABORES</span>
+                    <span class="titulo-card">Bolo Festa</span>
+                </span>
+            </button>
+            <!-- Kit Festa -->
+            <button type="button" class="card-categoria" data-id="kit-festa">
+                <img src="img/kit_festa_docura_de_amor.png" class="img-capa-item" alt="Kit Festa">
+                <span class="info-card">
+                    <span class="sabores-card">MONTE O SEU</span>
+                    <span class="titulo-card">Kit Festa</span>
+                </span>
+            </button>
+            <!-- Caixinha de Doces -->
+            <button type="button" class="card-categoria" data-id="caixinha-doces">
+                <img src="img/caixa_brigadeiros_docura_de_amor.png" class="img-capa-item" alt="Caixinha de Doces">
+                <span class="info-card">
+                    <span class="sabores-card">MONTE O SEU</span>
+                    <span class="titulo-card">Caixinha de Doces</span>
+                </span>
+            </button>
+            <!-- Cones -->
+            <button type="button" class="card-categoria" data-id="cones">
+                <img src="img/cone_gourmet_docura_de_amor.png" class="img-capa-item" alt="Cones Gourmet">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Cones Gourmet</span>
+                </span>
+            </button>
+            <!-- Pão de mel -->
+            <button type="button" class="card-categoria" data-id="pão-mel">
+                <img src="img/pao_de_mel.png" class="img-capa-item" alt="Pão de Mel">
+                <span class="info-card">
+                    <span class="sabores-card">4 SABORES</span>
+                    <span class="titulo-card">Pão de Mel</span>
+                </span>
+            </button>
+            <!-- Brownie -->
+            <button type="button" class="card-categoria" data-id="brownie">
+                <img src="img/brownies_docura_de_amor.png" class="img-capa-item" alt="Brownies">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Brownies</span>
+                </span>
+            </button>
+            <!-- Bolo no pote -->
+            <button type="button" class="card-categoria" data-id="bolo-no-pote">
+                <img src="img/bolos_no_pote_variedade.png" class="img-capa-item" alt="Bolo no Pote">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Bolo no Pote</span>
+                </span>
+            </button>
+            <!-- Cookies -->
+            <button type="button" class="card-categoria" data-id="cookies">
+                <img src="img/cookies_docura_de_amor.png" class="img-capa-item" alt="Cookies">
+                <span class="info-card">
+                    <span class="sabores-card">4 SABORES</span>
+                    <span class="titulo-card">Cookies</span>
+                </span>
+            </button>
+            <!-- Copo da felicidade -->
+            <button type="button" class="card-categoria" data-id="copo-da-felicidade">
+                <img src="img/copo_da_felicidade_gourmet_v2.png" class="img-capa-item" alt="Copo da Felicidade">
+                <span class="info-card">
+                    <span class="sabores-card">6 SABORES</span>
+                    <span class="titulo-card">Copo da Felicidade</span>
+                </span>
+            </button>
+            <!-- Trufas -->
+            <button type="button" class="card-categoria" data-id="trufas">
+                <img src="img/trufas_docura_de_amor.png" class="img-capa-item" alt="Trufas e Docinhos">
+                <span class="info-card">
+                    <span class="sabores-card">18 SABORES</span>
+                    <span class="titulo-card">Trufas e Docinhos</span>
+                </span>
+            </button>
+            <!-- Palha -->
+            <button type="button" class="card-categoria" data-id="palha-italiana">
+                <img src="img/palha_italiana_docura_de_amor.png" class="img-capa-item" alt="Palha Italiana">
+                <span class="info-card">
+                    <span class="sabores-card">2 SABORES</span>
+                    <span class="titulo-card">Palha Italiana</span>
+                </span>
+            </button>
+            <!-- Picolé -->
+            <button type="button" class="card-categoria" data-id="picole">
+                <img src="img/picoles_gourmet_variados.png" class="img-capa-item" alt="Picolé Gourmet">
+                <span class="info-card">
+                    <span class="sabores-card">5 SABORES</span>
+                    <span class="titulo-card">Picolé Gourmet</span>
+                </span>
+            </button>
+            <!-- Pudim -->
+            <button type="button" class="card-categoria" data-id="pudim">
+                <img src="img/pudim_inteiro.png" class="img-capa-item" alt="Pudim">
+                <span class="info-card">
+                    <span class="sabores-card">2 SABORES</span>
+                    <span class="titulo-card">Pudim</span>
+                </span>
+            </button>
+            <!-- Salgados -->
+            <button type="button" class="card-categoria" data-id="salgados">
+                <img src="img/kit-salgados.png" class="img-capa-item" alt="Salgados">
+                <span class="info-card">
+                    <span class="sabores-card">4 SABORES</span>
+                    <span class="titulo-card">Salgados</span>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Submenus / Painéis modais do Catálogo -->
+    <div class="sheet-fundo" id="sheetFundo">
+        <div class="sheet">
+            <button class="sheet-fechar" id="sheetFechar" type="button" aria-label="Fechar painel">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <!-- Cestas -->
+            <div class="sheet-conteudo" id="cestas">
+                <h2 class="sheet-titulo">Nossas Cestas</h2>
+                <p class="sheet-subtitulo">PREPARADO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/Cesta-Première.png" alt="Cesta Première">
+                        <h3>Cesta Première</h3>
+                        <p class="produto-desc">Reúne uma seleção de pães artesanais, croissant, macarons, doces finos,
+                            bolo de chocolate e suco natural.</p>
+                        <p class="produto-preco">R$ 249,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/Cesta-Belle-Amour.png" alt="Cesta Belle Amour">
+                        <h3>Cesta Belle Amour</h3>
+                        <p class="produto-desc">Composta por um delicado buquê de rosas, suco de uva integral, geleia
+                            artesanal, brownies em formato de coração e trufas finas.</p>
+                        <p class="produto-preco">R$ 329,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/Cesta-Maison.png" alt="Cesta Maison">
+                        <h3>Cesta Maison</h3>
+                        <p class="produto-desc">Apresenta uma combinação acolhedora de croissants, pães artesanais, bolo
+                            caseiro, frutas frescas, iogurte e geleia.</p>
+                        <p class="produto-preco">R$ 219,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/Cesta-Essenza-Fit.png" alt="Cesta Essenza Fit">
+                        <h3>Cesta Essenza Fit</h3>
+                        <p class="produto-desc">Contém frutas frescas, iogurte com granola, crackers integrais,
+                            brigadeiros especiais e suco verde natural.</p>
+                        <p class="produto-preco">R$ 239,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/Cesta-Petit-Bonheur.png" alt="Cesta Petit Bonheur">
+                        <h3>Cesta Petit Bonheur</h3>
+                        <p class="produto-desc">Contém cupcakes decorados, cookies com gotas de chocolate, biscoitos
+                            divertidos, leite com chocolate e pelúcia.</p>
+                        <p class="produto-preco">R$ 219,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/Cesta-Grand-Élégance.png" alt="Cesta Grand Élégance">
+                        <h3>Cesta Grand Élégance</h3>
+                        <p class="produto-desc">Combina frutas selecionadas, croissants, pães especiais, geleia
+                            artesanal, chocolates finos, trufas e caneca exclusiva.</p>
+                        <p class="produto-preco">R$ 219,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolos Caseiros -->
+            <div class="sheet-conteudo" id="bolos-caseiros">
+                <h2 class="sheet-titulo">Nossos Bolos Caseiros</h2>
+                <p class="sheet-subtitulo">TUDO SELECIONADO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/bolo_cenoura_com_chocolate.jpg" alt="Bolo de Cenoura com Chocolate">
+                        <h3>Bolo de Cenoura com Chocolate</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_chocolate_brigadeiro.png" alt="Bolo de Chocolate com Brigadeiro">
+                        <h3>Bolo de Chocolate com Brigadeiro</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_fuba_goiabada.png" alt="Bolo de Fubá com Goiabada">
+                        <h3>Bolo de Fubá com Goiabada</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_fuba_goiabada.png" alt="Bolo de Laranja">
+                        <h3>Bolo de Laranja</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_de_banana.jpg" alt="Bolo de Banana">
+                        <h3>Bolo de Banana</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_de_paçoca.jpg" alt="Bolo de Amendoim">
+                        <h3>Bolo de Amendoim com Brigadeiro</h3>
+                        <p class="produto-desc">Tamanho Único</p>
+                        <p class="produto-preco">R$ 35,90</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolos Festa -->
+            <div class="sheet-conteudo" id="bolo-festa">
+                <h2 class="sheet-titulo">Nossos Bolos de Festa</h2>
+                <p class="sheet-subtitulo">TUDO PREPARADO E DECORADO COM MUITO AMOR E CARINHO</p>
+
+                <div class="div-orcamento">
+                    <div class="img-orcamento">
+                        <img src="img/bolo_festa_orcamento.png" alt="Bolo de festa decorado">
+                    </div>
+                    <div class="div-texto-orcamento">
+                        <p class="orcamento-sub">ENCOMENDAS PERSONALIZADAS</p>
+                        <h3>Orçamento</h3>
+                        <p class="orcamento-intro">A nossa doceria terá o maior prazer em fazer parte da sua festa! Peça
+                            o seu orçamento pelo WhatsApp.</p>
+                        <ol class="orcamento-passos">
+                            <li><span>1</span>
+                                <p>Conte qual será a comemoração.</p>
+                            </li>
+                            <li><span>2</span>
+                                <p>Diga o que deseja para a mesa.</p>
+                            </li>
+                            <li><span>3</span>
+                                <p>Alinhamos data, horário e pagamento.</p>
+                            </li>
+                        </ol>
+                        <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20bolo%20de%20festa."
+                            target="_blank" rel="noopener" class="btn-orcamento">
+                            <i class="bi bi-whatsapp"></i> PEDIR ORÇAMENTO
+                        </a>
+                    </div>
+                </div>
+
+                <div class="div-imagens-bolos">
+                    <img src="img/bolo_festa_chantininho_perolado.png" class="bolo-festa" alt="Bolo 1">
+                    <img src="img/bolo_festa_docura_de_amor.png" class="bolo-festa" alt="Bolo 2">
+                    <img src="img/bolo_festa_drip_cake.png" class="bolo-festa" alt="Bolo 3">
+                </div>
+
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/bolo_ninho_nutella.png" alt="Bolo de Ninho com Nutella">
+                        <h3>Bolo de Ninho com Nutella</h3>
+                        <p class="produto-desc">Tamanho Família</p>
+                        <p class="produto-preco">R$ 150,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_red_velvet.png" alt="Bolo de Red Velvet">
+                        <h3>Bolo de Red Velvet</h3>
+                        <p class="produto-desc">Tamanho Família</p>
+                        <p class="produto-preco">R$ 150,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_chocolate_caramelo.png" alt="Bolo de Caramelo Salgado">
+                        <h3>Bolo de Brigadeiro com Caramelo</h3>
+                        <p class="produto-desc">Tamanho Família</p>
+                        <p class="produto-preco">R$ 150,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/bolo_doce_leite_nozes.png" alt="Bolo de Nozes">
+                        <h3>Bolo de Nozes com Doce de Leite</h3>
+                        <p class="produto-desc">Tamanho Família</p>
+                        <p class="produto-preco">R$ 150,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kit Festa -->
+            <div class="sheet-conteudo" id="kit-festa">
+                <h2 class="sheet-titulo">Nossos Kits de Festa</h2>
+                <p class="sheet-subtitulo">TUDO PREPARADO E DECORADO COM MUITO AMOR E CARINHO</p>
+                <div class="div-orcamento">
+                    <div class="img-orcamento">
+                        <img src="img/kit_festa_docura_de_amor.png" alt="Kit Festa">
+                    </div>
+                    <div class="div-texto-orcamento">
+                        <p class="orcamento-sub">ENCOMENDAS PERSONALIZADAS</p>
+                        <h3>Monte o seu</h3>
+                        <p class="orcamento-intro">Na Doçura de Amor, você pode montar o seu Kit Festa do jeitinho que
+                            sempre sonhou!</p>
+                        <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20kit%20festa."
+                            target="_blank" rel="noopener" class="btn-orcamento">
+                            <i class="bi bi-whatsapp"></i> PEDIR ORÇAMENTO
+                        </a>
+                    </div>
+                </div>
+                <div class="div-imagens-bolos">
+                    <img src="img/kit_festa_1.png" class="bolo-festa" alt="Kit 1">
+                    <img src="img/kit_festa_2.png" class="bolo-festa" alt="Kit 2">
+                    <img src="img/kit_festa_docura_de_amor.png" class="bolo-festa" alt="Kit 3">
+                </div>
+            </div>
+
+            <!-- Caixinha de doces -->
+            <div class="sheet-conteudo" id="caixinha-doces">
+                <h2 class="sheet-titulo">Nossas Caixinhas de Doces</h2>
+                <p class="sheet-subtitulo">TUDO MONTADO DO SEU JEITINHO</p>
+                <div class="div-orcamento">
+                    <div class="img-orcamento">
+                        <img src="img/caixa_brigadeiros_docura_de_amor.png" alt="Caixinha de Doces">
+                    </div>
+                    <div class="div-texto-orcamento">
+                        <p class="orcamento-sub">ENCOMENDAS PERSONALIZADAS</p>
+                        <h3>Monte o seu</h3>
+                        <p class="orcamento-intro">Quem monta a sua caixinha de doces é você!</p>
+                        <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20caixa%20de%20doces."
+                            target="_blank" rel="noopener" class="btn-orcamento">
+                            <i class="bi bi-whatsapp"></i> PEDIR ORÇAMENTO
+                        </a>
+                    </div>
+                </div>
+                <div class="div-imagens-bolos">
+                    <img src="img/caixinha_montagem.png" class="bolo-festa" alt="Cx 1">
+                    <img src="img/caixinha_diversidade.png" class="bolo-festa" alt="Cx 2">
+                    <img src="img/caixinha_doces_flatlay.png" class="bolo-festa" alt="Cx 3">
+                    <img src="img/caixinha_presente.png" class="bolo-festa" alt="Cx 4">
+                </div>
+            </div>
+
+            <!-- Cones Gourmet -->
+            <div class="sheet-conteudo" id="cones">
+                <h2 class="sheet-titulo">Nossos Cones Gourmet</h2>
+                <p class="sheet-subtitulo">TUDO SELECIONADO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/cone_ferrero.png" alt="Cone de Ferrero">
+                        <h3>Cone de Ferrero Rocher</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cone_ninho_morango.png" alt="Cone de Ninho">
+                        <h3>Cone de Ninho com Morango</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cone_kinder_bueno.png" alt="Cone Kinder">
+                        <h3>Cone de Kinder Bueno</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cone_oreo.png" alt="Cone Oreo">
+                        <h3>Cone de Oreo</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cone_pacoca.png" alt="Cone Paçoca">
+                        <h3>Cone de Paçoca</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cone_banoffee.png" alt="Cone Banoffe">
+                        <h3>Cone de Banoffe</h3>
+                        <p class="produto-preco">R$ 22,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pães de Mel -->
+            <div class="sheet-conteudo" id="pão-mel">
+                <h2 class="sheet-titulo">Nossos Pães de Mel</h2>
+                <p class="sheet-subtitulo">TUDO SELECIONADO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/pao_de_mel_doce_de_leite_nozes.png" alt="Pão de Mel Doce de Leite e Nozes">
+                        <h3>Pão de Mel com Doce de Leite e Nozes</h3>
+                        <p class="produto-preco">R$ 12,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pao_de_mel.png" alt="Pão de Mel Doce de Leite">
+                        <h3>Pão de Mel com Doce de Leite</h3>
+                        <p class="produto-preco">R$ 12,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pao_de_mel_brigadeiro.png" alt="Pão de Mel Brigadeiro">
+                        <h3>Pão de Mel com Brigadeiro</h3>
+                        <p class="produto-preco">R$ 12,00</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brownies -->
+            <div class="sheet-conteudo" id="brownie">
+                <h2 class="sheet-titulo">Nossos Brownies</h2>
+                <p class="sheet-subtitulo">TUDO SELECIONADO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/brownie_ninho_nutella.png" alt="Brownie Ninho e Nutella">
+                        <h3>Brownie de Ninho com Nutella</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/brownie_doceleite_nozes.png" alt="Brownie Doce de Leite">
+                        <h3>Brownie com Doce de Leite e Nozes</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/brownie_brigadeiro.png" alt="Brownie Brigadeiro">
+                        <h3>Brownie com Brigadeiro</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/brownie_morango.png" alt="Brownie Morango">
+                        <h3>Brownie de Ninho com Morango</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/brownie_kinder_bueno.png" alt="Brownie Kinder">
+                        <h3>Brownie de Kinder Bueno</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/brownie_oreo.png" alt="Brownie Oreo">
+                        <h3>Brownie de Oreo</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolo no Pote -->
+            <div class="sheet-conteudo" id="bolo-no-pote">
+                <h2 class="sheet-titulo">Nossos Bolos no Pote</h2>
+                <p class="sheet-subtitulo">TUDO PREPARADO DE UMA FORMA ESPECIAL</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/bolo_no_pote_catalogo.png" alt="Bolo no Pote Morango">
+                        <h3>Bolo no Pote Ninho com Morango</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pote_ninho_nutella.png" alt="Bolo no Pote Ninho e Nutella">
+                        <h3>Bolo no Pote Ninho com Nutella</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pote_cenoura_brigadeiro.png" alt="Bolo no Pote Cenoura">
+                        <h3>Bolo no Pote Cenoura com Brigadeiro</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pote_red_velvet.png" alt="Bolo no Pote Red Velvet">
+                        <h3>Bolo no Pote Red Velvet</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pote_prestigio.png" alt="Bolo no Pote Prestígio">
+                        <h3>Bolo no Pote Prestígio</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pote_oreo.png" alt="Bolo no Pote Oreo">
+                        <h3>Bolo no Pote Oreo</h3>
+                        <p class="produto-preco">R$ 14,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cookies -->
+            <div class="sheet-conteudo" id="cookies">
+                <h2 class="sheet-titulo">Nossos Cookies</h2>
+                <p class="sheet-subtitulo">TUDO PREPARADO DE UMA FORMA ESPECIAL</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/cookies_docura_de_amor.png" alt="Cookies Tradicional">
+                        <h3>Cookies Tradicional (2 unidades)</h3>
+                        <p class="produto-preco">R$ 9,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cookie_nutella.png" alt="Cookie Nutella">
+                        <h3>Cookie com Nutella (2 unidades)</h3>
+                        <p class="produto-preco">R$ 9,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cookie_kitkat.png" alt="Cookie KitKat">
+                        <h3>Cookie com KitKat (2 unidades)</h3>
+                        <p class="produto-preco">R$ 9,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/cookie_brigadeiro.png" alt="Cookie Brigadeiro">
+                        <h3>Cookie com Brigadeiro (2 unidades)</h3>
+                        <p class="produto-preco">R$ 9,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copo da Felicidade -->
+            <div class="sheet-conteudo" id="copo-da-felicidade">
+                <h2 class="sheet-titulo">Nossos Copos da Felicidade</h2>
+                <p class="sheet-subtitulo">TUDO PREPARADO DE UMA FORMA ESPECIAL</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/copo_uva_branco.png" alt="Copo Uva">
+                        <h3>Copo da Felicidade de Uva com Brownie</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/copo_ninho_morango.png" alt="Copo Ninho e Morango">
+                        <h3>Copo de Ninho com Morango e Nutella</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/copo_banoffee.png" alt="Copo Banoffe">
+                        <h3>Copo da Felicidade Banoffe</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/copo_kinder_bueno.png" alt="Copo Kinder">
+                        <h3>Copo da Felicidade Kinder Bueno</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/copo_oreo.png" alt="Copo Oreo">
+                        <h3>Copo da Felicidade de Oreo</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/copo_ferrero.png" alt="Copo Ferrero">
+                        <h3>Copo Ferrero Rocher</h3>
+                        <p class="produto-preco">R$ 16,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trufas -->
+            <div class="sheet-conteudo" id="trufas">
+                <h2 class="sheet-titulo">Nossas Trufas e Docinhos</h2>
+                <p class="sheet-subtitulo">FEITAS COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/trufa_brigadeiro.png" alt="Trufa Brigadeiro">
+                        <h3>Trufa Brigadeiro Tradicional</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/trufa_maracuja.png" alt="Trufa Maracujá">
+                        <h3>Trufa de Maracujá</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/trufa_nutella_avela.png" alt="Trufa Ferrero">
+                        <h3>Trufa Ferrero Rocher</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/trufa_red_velvet.png" alt="Trufa Red Velvet">
+                        <h3>Trufa Red Velvet</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/trufa_beijinho.png" alt="Trufa Prestígio">
+                        <h3>Trufa Prestígio</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/trufa_cafe_caramelo.png" alt="Trufa Café">
+                        <h3>Trufa Café com Caramelo</h3>
+                        <p class="produto-preco">R$ 6,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <h2 class="sheet-titulo" style="margin-top: 40px;">Nossos Docinhos</h2>
+                <p class="sheet-subtitulo">TRADIÇÃO EM CADA BARRINHA</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/docinho_brigadeiro_tradicional.png" alt="Brigadeiro">
+                        <h3>Brigadeiro Tradicional</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_brigadeiro_branco.png" alt="Ninho">
+                        <h3>Brigadeiro de Ninho</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_churros.png" alt="Churros">
+                        <h3>Brigadeiro de Churros</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_laka.png" alt="Laka">
+                        <h3>Brigadeiro Laka</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_coco_queimado.png" alt="Coco Queimado">
+                        <h3>Brigadeiro de Coco Queimado</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_oreo.png" alt="Oreo">
+                        <h3>Brigadeiro de Oreo</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_ninho_nutella.png" alt="Ninho e Nutella">
+                        <h3>Brigadeiro Ninho com Nutella</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_limao.png" alt="Limão">
+                        <h3>Brigadeiro de Limão</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_ferrero.png" alt="Ferrero">
+                        <h3>Brigadeiro Ferrero Rocher</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_pacoca.png" alt="Paçoca">
+                        <h3>Brigadeiro de Paçoca</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_morango.png" alt="Morango">
+                        <h3>Brigadeiro de Morango</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/docinho_casadinho.png" alt="Casadinho">
+                        <h3>Casadinho</h3>
+                        <p class="produto-preco">R$ 3,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Palha Italiana -->
+            <div class="sheet-conteudo" id="palha-italiana">
+                <h2 class="sheet-titulo">Nossas Palhas Italianas</h2>
+                <p class="sheet-subtitulo">FEITAS COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/palha_italiana_tradicional.png" alt="Palha Tradicional">
+                        <h3>Palha Italiana de Brigadeiro</h3>
+                        <p class="produto-preco">R$ 12,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/palha_italiana_ninho_oreo.png" alt="Palha Ninho e Oreo">
+                        <h3>Palha Italiana de Ninho com Oreo</h3>
+                        <p class="produto-preco">R$ 12,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/palha-italiana-de-cafe.png" alt="Palha Café">
+                        <h3>Palha Italiana de Café</h3>
+                        <p class="produto-preco">R$ 12,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Picolé gourmet -->
+            <div class="sheet-conteudo" id="picole">
+                <h2 class="sheet-titulo">Nossos Picolés Gourmet</h2>
+                <p class="sheet-subtitulo">FEITAS COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/picole_pudim.png" alt="Picolé Pudim">
+                        <h3>Picolé Gourmet - Sabor Pudim</h3>
+                        <p class="produto-preco">R$ 18,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/picole_ninho_morango.png" alt="Picolé Ninho com Morango">
+                        <h3>Picolé Gourmet - Ninho com Morango</h3>
+                        <p class="produto-preco">R$ 18,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/picole_ninho_nutella.png" alt="Picolé Ninho com Nutella">
+                        <h3>Picolé Gourmet - Ninho com Nutella</h3>
+                        <p class="produto-preco">R$ 18,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/picole-morango-cravejado.png" alt="Picolé Morango Cravejado">
+                        <h3>Picolé Gourmet - Morango Cravejado</h3>
+                        <p class="produto-preco">R$ 18,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/picole-mousse-maracuja-chocolate-branco.png" alt="Picolé Maracujá">
+                        <h3>Picolé Mousse de Maracujá com Chocolate</h3>
+                        <p class="produto-preco">R$ 18,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pudim -->
+            <div class="sheet-conteudo" id="pudim">
+                <h2 class="sheet-titulo">Nosso Pudim Cremoso</h2>
+                <p class="sheet-subtitulo">FEITO COM MUITO AMOR E CARINHO</p>
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/pudim_gourmet_docura_de_amor.png" alt="Pudim Inteiro">
+                        <h3>Pudim de Leite Condensado - Inteiro</h3>
+                        <p class="produto-preco">R$ 24,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/pudim_fatia.png" alt="Fatia de Pudim">
+                        <h3>Pudim de Leite Condensado - Fatia</h3>
+                        <p class="produto-preco">R$ 8,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salgados -->
+            <div class="sheet-conteudo" id="salgados">
+                <h2 class="sheet-titulo">Nossos Salgados</h2>
+                <p class="sheet-subtitulo">FEITO COM MUITO AMOR E CARINHO</p>
+
+                <div class="div-orcamento">
+                    <div class="img-orcamento">
+                        <img src="img/cento-salgados-monte-o-seu.png" alt="Salgados">
+                    </div>
+                    <div class="div-texto-orcamento">
+                        <p class="orcamento-sub">ENCOMENDAS PERSONALIZADAS</p>
+                        <h3>Monte o seu</h3>
+                        <p class="orcamento-intro">A nossa doceria terá o maior prazer em fazer parte desse momento tão
+                            especial! Peça o seu orçamento pelo WhatsApp.</p>
+                        <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20salgados."
+                            target="_blank" rel="noopener" class="btn-orcamento">
+                            <i class="bi bi-whatsapp"></i> PEDIR ORÇAMENTO
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sheet-lista">
+                    <div class="produto">
+                        <img src="img/coxinha-so-frango.png" alt="Coxinha de Frango">
+                        <h3>Coxinha de Frango</h3>
+                        <p class="produto-preco">R$ 10,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/coxinha-de-frango.png" alt="Coxinha com Requeijão">
+                        <h3>Coxinha de Frango com Requeijão</h3>
+                        <p class="produto-preco">R$ 10,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/enroladinho-presunto-mussarela.png" alt="Enroladinho Presunto e Queijo">
+                        <h3>Enroladinho de Presunto e Mussarela</h3>
+                        <p class="produto-preco">R$ 10,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="img/enroladinho-de-salsicha .png" alt="Enroladinho de Salsicha">
+                        <h3>Enroladinho de Salsicha</h3>
+                        <p class="produto-preco">R$ 10,50</p>
+                        <button type="button" class="btn-produto">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lojas -->
+            <div class="sheet-conteudo" id="lojas">
+                <h2 class="sheet-titulo">Nossas Lojas</h2>
+                <p class="sheet-subtitulo">VENHA NOS VISITAR OU PEÇA PARA RETIRAR</p>
+                <div class="lojas-grade">
+                    <!-- Nova Lima -->
+                    <article class="loja">
+                        <div class="carrossel">
+                            <div class="carrossel-slides">
+                                <img class="carrossel-slide ativo" src="img/nova-lima-fachada.webp"
+                                    alt="Fachada Nova Lima" loading="lazy">
+                                <img class="carrossel-slide" src="img/nova-lima-interior.webp" alt="Interior Nova Lima"
+                                    loading="lazy">
+                            </div>
+                            <div class="carrossel-pontos"></div>
+                        </div>
+                        <div class="loja-corpo">
+                            <h3 class="loja-nome">Nova Lima</h3>
+                            <p class="loja-info"><i class="bi bi-geo-alt"></i>Avenida Alameda Oscar Niemeyer - 250 Nova
+                                Lima</p>
+                            <p class="loja-info"><i class="bi bi-clock"></i>Seg à Sex - 08:00h às 18:00h | Sáb e Fer-
+                                08:00h
+                                às 14:00h</p>
+                            <div class="loja-botoes">
+                                <a href="https://www.google.com/maps" target="_blank" rel="noopener"
+                                    class="btn-loja-mapa">
+                                    <i class="bi bi-map"></i> Como chegar
+                                </a>
+                                <a href="https://wa.me/5531975026367" target="_blank" rel="noopener"
+                                    class="btn-orcamento">
+                                    <i class="bi bi-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Belvedere -->
+                    <article class="loja">
+                        <div class="carrossel">
+                            <div class="carrossel-slides">
+                                <img class="carrossel-slide ativo" src="img/belvedere-fachada.png"
+                                    alt="Fachada Belvedere" loading="lazy">
+                                <img class="carrossel-slide" src="img/belvedere-interior.png" alt="Interior Belvedere"
+                                    loading="lazy">
+                            </div>
+                            <div class="carrossel-pontos"></div>
+                        </div>
+                        <div class="loja-corpo">
+                            <h3 class="loja-nome">Belvedere</h3>
+                            <p class="loja-info"><i class="bi bi-geo-alt"></i>Avenida Luiz Paulo Franco - 220 Belvedere
+                            </p>
+                            <p class="loja-info"><i class="bi bi-clock"></i>Seg à Sex - 08:00h às 18:00h | Sáb e Fer-
+                                08:00h
+                                às 14:00h</p>
+                            <div class="loja-botoes">
+                                <a href="https://www.google.com/maps" target="_blank" rel="noopener"
+                                    class="btn-loja-mapa">
+                                    <i class="bi bi-map"></i> Como chegar
+                                </a>
+                                <a href="https://wa.me/5531975026367" target="_blank" rel="noopener"
+                                    class="btn-orcamento">
+                                    <i class="bi bi-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- BH Shopping -->
+                    <article class="loja">
+                        <div class="carrossel">
+                            <div class="carrossel-slides">
+                                <img class="carrossel-slide ativo" src="img/bh-shopping-fachada.png"
+                                    alt="Fachada BH Shopping" loading="lazy">
+                                <img class="carrossel-slide" src="img/bh-shopping-interios.webp"
+                                    alt="Interior BH Shopping" loading="lazy">
+                            </div>
+                            <div class="carrossel-pontos"></div>
+                        </div>
+                        <div class="loja-corpo">
+                            <h3 class="loja-nome">BH Shopping</h3>
+                            <p class="loja-info"><i class="bi bi-geo-alt"></i>Rodovia BR-356 - 3.049 Belvedere</p>
+                            <p class="loja-info"><i class="bi bi-clock"></i>Seg à Sex - 08:00h às 18:00h | Sáb e Fer-
+                                08:00h
+                                às 14:00h</p>
+                            <div class="loja-botoes">
+                                <a href="https://www.google.com/maps" target="_blank" rel="noopener"
+                                    class="btn-loja-mapa">
+                                    <i class="bi bi-map"></i> Como chegar
+                                </a>
+                                <a href="https://wa.me/5531975026367" target="_blank" rel="noopener"
+                                    class="btn-orcamento">
+                                    <i class="bi bi-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Shopping Del Rey -->
+                    <article class="loja">
+                        <div class="carrossel">
+                            <div class="carrossel-slides">
+                                <img class="carrossel-slide ativo" src="img/del-rey-fachada.png" alt="Fachada Del Rey"
+                                    loading="lazy">
+                                <img class="carrossel-slide" src="img/del-rey-interior.png" alt="Interior Del Rey"
+                                    loading="lazy">
+                            </div>
+                            <div class="carrossel-pontos"></div>
+                        </div>
+                        <div class="loja-corpo">
+                            <h3 class="loja-nome">Shopping Del Rey</h3>
+                            <p class="loja-info"><i class="bi bi-geo-alt"></i>Avenida Presidente Carlos Luz - 3.001
+                                Caiçara</p>
+                            <p class="loja-info"><i class="bi bi-clock"></i>Seg à Sex - 08:00h às 18:00h | Sáb e Fer-
+                                08:00h
+                                às 14:00h</p>
+                            <div class="loja-botoes">
+                                <a href="https://www.google.com/maps" target="_blank" rel="noopener"
+                                    class="btn-loja-mapa">
+                                    <i class="bi bi-map"></i> Como chegar
+                                </a>
+                                <a href="https://wa.me/5531975026367" target="_blank" rel="noopener"
+                                    class="btn-orcamento">
+                                    <i class="bi bi-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Contato -->
+            <div class="sheet-conteudo" id="contato">
+                <h2 class="sheet-titulo">Fale com a gente</h2>
+                <p class="sheet-subtitulo">CONTATO</p>
+                <p class="contato-intro">Deixe a sua mensagem: respondemos pelo WhatsApp, e-mail ou telefone, sempre com
+                    muito carinho.</p>
+
+                <div class="contato-grade">
+                    <!-- Formulário -->
+                    <form class="contato-form" id="formContato" novalidate>
+                        <div class="contato-campo">
+                            <label for="ct-nome">Seu nome</label>
+                            <input id="ct-nome" name="nome" type="text" autocomplete="name"
+                                placeholder="Como podemos te chamar?">
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <div class="contato-linha">
+                            <div class="contato-campo">
+                                <label for="ct-tel">WhatsApp / telefone</label>
+                                <input id="ct-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel"
+                                    placeholder="(00) 00000-0000">
+                                <span class="contato-erro" aria-live="polite"></span>
+                            </div>
+                            <div class="contato-campo">
+                                <label for="ct-motivo">Motivo do contato</label>
+                                <select id="ct-motivo" name="motivo">
+                                    <option>Quero fazer um pedido</option>
+                                    <option>Orçamento para festa</option>
+                                    <option>Dúvida sobre produtos</option>
+                                    <option>Acompanhar um pedido</option>
+                                    <option>Elogio ou sugestão</option>
+                                    <option>Reclamação (SAC)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contato-campo">
+                            <label for="ct-msg">Mensagem</label>
+                            <textarea id="ct-msg" name="mensagem" rows="4"
+                                placeholder="Conte para a gente o que você precisa: sabores, data, quantidade..."></textarea>
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <div class="contato-botoes">
+                            <button type="button" class="btn-contato-whats" id="ctWhats">
+                                <i class="bi bi-send"></i> Enviar pelo WhatsApp
+                            </button>
+                            <button type="button" class="btn-contato-email" id="ctEmail">
+                                <i class="bi bi-envelope"></i> Enviar por e-mail
+                            </button>
+                        </div>
+
+                        <p class="contato-nota">Ao enviar, abrimos o WhatsApp com a sua mensagem pronta. Você também
+                            pode escrever para vendasonline@docuradeamor.com.br.</p>
+                    </form>
+
+                    <!-- Lateral -->
+                    <aside class="contato-lateral">
+                        <div class="contato-card">
+                            <h3>Atendimento</h3>
+                            <ul class="contato-info">
+                                <li>
+                                    <span class="contato-icone"><i class="bi bi-chat"></i></span>
+                                    <div>
+                                        <a href="https://wa.me/5531975026367" target="_blank"
+                                            rel="noopener"><strong>(31) 97502-6367</strong></a>
+                                        <small>WhatsApp e ligações</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="contato-icone"><i class="bi bi-envelope"></i></span>
+                                    <div>
+                                        <a
+                                            href="mailto:vendasonline@docuradeamor.com.br"><strong>vendasonline@docuradeamor.com.br</strong></a>
+                                        <small>Vendas online</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="contato-icone"><i class="bi bi-clock"></i></span>
+                                    <div>
+                                        <strong>Segunda a sexta</strong>
+                                        <small>8:00 às 18:00</small>
+                                        <strong>Sábado e Feriados</strong>
+                                        <small>8:00 às 14:00</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="contato-icone"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <strong>Entrega e retirada</strong>
+                                        <small>Entregamos em Belo Horizonte e região e você também pode retirar nas
+                                            nossas unidades. O frete e o horário são confirmados no atendimento.</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contato-sac">
+                            <h3>SAC</h3>
+                            <p>Serviço de Atendimento ao Cliente: se algo não saiu como o esperado, fale com a gente que
+                                resolvemos com prioridade e muito cuidado.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Como pedir -->
+    <section class="sec-pedir" id="como-pedir">
+        <div class="text-como-pedir animar">
+            <p class="pedir-sub">COMO PEDIR</p>
+            <h2 class="pedir-titulo">Do site para a sua mesa</h2>
+            <span class="pedir-linha"></span>
+            <p class="pedir-descricao">Um pedido simples, sem cadastro e sem complicação.</p>
+        </div>
+        <div class="div-passoapasso animar-grupo">
+            <article class="passo">
+                <div class="passo-icone"><i class="bi bi-bag"></i></div>
+                <p class="passo-numero">PASSO 1</p>
+                <h3>Escolha as delícias</h3>
+                <p class="passo-texto">Navegue pelo catálogo, adicione os sabores favoritos na cesta e ajuste as
+                    quantidades.</p>
+            </article>
+            <article class="passo">
+                <div class="passo-icone"><i class="bi bi-chat"></i></div>
+                <p class="passo-numero">PASSO 2</p>
+                <h3>Faça o pedido pelo site</h3>
+                <p class="passo-texto">No checkout você escolhe entrega ou retirada e o pedido chega formatado no nosso
+                    WhatsApp.</p>
+            </article>
+            <article class="passo">
+                <div class="passo-icone"><i class="bi bi-box-seam"></i></div>
+                <p class="passo-numero">PASSO 3</p>
+                <h3>Receba ou retire</h3>
+                <p class="passo-texto">Confirmamos a data, o horário e o frete, preparamos tudo fresquinho e avisamos
+                    quando sai.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section class="sec-avaliacoes" id="avaliacoes">
+        <div class="text-avaliacoes animar">
+            <p class="avaliacoes-sub">NOSSAS AVALIAÇÕES</p>
+            <h2 class="avaliacoes-titulo">Quem prova, volta</h2>
+            <span class="avaliacoes-linha"></span>
+            <p class="avaliacoes-descricao">São vários clientes satisfeitos com o nosso trabalho.</p>
+        </div>
+        <div class="div-avaliacoes animar-grupo">
+            <article class="avaliacao">
+                <div class="avaliacao-foto">
+                    <img src="img/cesta-capa.png" alt="Cesta de café da manhã">
+                </div>
+                <div class="avaliacao-estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="avaliacao-texto">“Tudo de muita boa qualidade! Tudo feito com muito amor e
+                    carinho!!!”</blockquote>
+                <p class="avaliacao-produto">Cesta de café da manhã — Monte a sua</p>
+            </article>
+            <article class="avaliacao">
+                <div class="avaliacao-foto">
+                    <img src="img/bolo_cenoura_com_chocolate.jpg" alt="Bolo caseiro de cenoura">
+                </div>
+                <div class="avaliacao-estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="avaliacao-texto">“Excelente como sempre! Ingredientes bem selecionados. Ótimo
+                    atendimento!”</blockquote>
+                <p class="avaliacao-produto">Bolo caseiro de cenoura com cobertura de chocolate</p>
+            </article>
+            <article class="avaliacao">
+                <div class="avaliacao-foto">
+                    <img src="img/caixa_brigadeiros_docura_de_amor.png" alt="Caixinha com doces">
+                </div>
+                <div class="avaliacao-estrelas" role="img" aria-label="5 de 5 estrelas">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="avaliacao-texto">“Cada doce mais gostoso que o outro!”</blockquote>
+                <p class="avaliacao-produto">Caixinha com doces — Monte a sua</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Nossa Essência -->
+    <section class="sec-essencia" id="historia">
+        <div class="div-essencia animar-grupo">
+            <div class="div-texto-essencia">
+                <p class="essencia-sub essencia-item">NOSSA ESSÊNCIA</p>
+                <h2 class="essencia-titulo essencia-item">Nossa Essência</h2>
+                <span class="essencia-linha"></span>
+                <p class="essencia-texto essencia-item">
+                    Desde a nossa fundação, a Doçura de Amor transforma ingredientes selecionados em verdadeiras obras
+                    de arte gastronômicas. Cada doce, chocolate ou presente carrega a dedicação de uma equipe apaixonada
+                    pelo que faz.
+                </p>
+                <p class="essencia-texto essencia-item">
+                    Seja para celebrar momentos especiais ou para tornar o dia mais doce, a Doçura de Amor é sinônimo de
+                    qualidade e sofisticação.
+                </p>
+                <div class="botoes-essencia essencia-item">
+                    <a href="#catalogo" class="btn-catalogo">Ver as delícias</a>
+                </div>
+            </div>
+            <div class="essencia-imagem">
+                <img src="img/confeitaria_interior.png" alt="Interior da confeitaria Doçura de Amor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Festas -->
+    <section class="sec-festa" id="festas">
+        <img src="img/mesa-festa-docura-de-amor-horizontal.png" alt="Mesa de festa" class="festa-foto" loading="lazy">
+        <div class="festa-overlay"></div>
+        <div class="festa-conteudo">
+            <p class="festa-sub">ENCOMENDAS PARA FESTAS</p>
+            <h2 class="festa-titulo">
+                Vai comemorar?
+                <span>Nós montamos a sua festa.</span>
+            </h2>
+            <p class="festa-descricao">
+                Bolos decorados, docinhos gourmet, kits festa e lembrancinhas personalizadas. Conte a data, o número de
+                convidados e o estilo da comemoração.
+            </p>
+            <div class="festa-botoes">
+                <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20festa."
+                    target="_blank" rel="noopener" class="btn-catalogo">
+                    <i class="bi bi-whatsapp"></i> Pedir orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossas Lojas -->
+    <section class="sec-lojas" id="nossas-lojas">
+        <div class="div-lojas animar-grupo">
+            <div class="lojas-carrossel carrossel">
+                <div class="carrossel-slides">
+                    <img class="carrossel-slide ativo" src="img/nova-lima-fachada.webp" alt="Nova Lima">
+                    <img class="carrossel-slide" src="img/belvedere-fachada.png" alt="Belvedere" loading="lazy">
+                    <img class="carrossel-slide" src="img/bh-shopping-fachada.png" alt="BH Shopping" loading="lazy">
+                    <img class="carrossel-slide" src="img/del-rey-fachada.png" alt="Shopping Del Rey" loading="lazy">
+                </div>
+                <div class="carrossel-pontos"></div>
+            </div>
+            <div class="lojas-texto">
+                <p class="lojas-sub lojas-item">NOSSAS LOJAS</p>
+                <h2 class="lojas-titulo lojas-item">Descubra nossas delícias em 4 unidades em Belo Horizonte e região
+                </h2>
+                <p class="lojas-descricao lojas-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Entregamos em Belo Horizonte e região e você também pode retirar nas nossas unidades.</span>
+                </p>
+                <button type="button" class="btn-lojas lojas-item" data-sheet="lojas">
+                    <i class="bi bi-shop"></i> Ver todas as lojas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-grade animar-grupo">
+            <div class="rodape-coluna rodape-marca">
+                <img src="img/logo-docura-de-amor.png" alt="Doçura de Amor" class="rodape-logo">
+                <p class="rodape-frase">Um pedacinho de amor em cada mordida.</p>
+                <p class="rodape-local">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>4 unidades em Belo Horizonte e região</span>
+                </p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-titulo">NAVEGUE</h4>
+                <ul class="rodape-lista">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#historia">Nossa História</a></li>
+                    <li><a href="#nossas-lojas">Contato</a></li>
+                    <li><a href="#como-pedir">Finalizar pedido</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-titulo">DELÍCIAS</h4>
+                <ul class="rodape-lista">
+                    <li><a href="#" data-sheet="cestas">Cestas</a></li>
+                    <li><a href="#" data-sheet="bolos-caseiros">Bolos caseiros</a></li>
+                    <li><a href="#" data-sheet="bolo-festa">Bolos de festa</a></li>
+                    <li><a href="#" data-sheet="kit-festa">Kit festa</a></li>
+                    <li><a href="#" data-sheet="caixinha-doces">Caixinha de doces</a></li>
+                    <li><a href="#" data-sheet="cones">Cones gourmet</a></li>
+                    <li><a href="#catalogo" class="rodape-destaque">Ver todas as delícias</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-titulo">FALE COM A GENTE</h4>
+                <ul class="rodape-contato">
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:vendasonline@docuradeamor.com.br">vendasonline@docuradeamor.com.br</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-chat"></i>
+                        <a href="https://wa.me/5531975026367" target="_blank" rel="noopener">(31) 97502-6367</a>
+                    </li>
+                    <li class="rodape-horario">
+                        <i class="bi bi-clock"></i>
+                        <span>Segunda a sexta: 8:00 às 18:00</span>
+                    </li>
+                    <li class="rodape-horario">
+                        <i class="bi bi-clock"></i>
+                        <span>Sábado e Feriados: 8:00 às 14:00</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/5531975026367?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+                    target="_blank" rel="noopener" class="btn-rodape-whats">
+                    Pedir pelo WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <p>© 2026 Doçura de Amor — Confeitaria Gourmet. Belo Horizonte, MG.</p>
+            <p>Feito com muito amor, carinho e açúcar na medida.</p>
+        </div>
+    </footer>
+
+    <!-- Overlay: Checkout -->
+    <div class="checkout-overlay" id="checkoutOverlay" aria-hidden="true">
+        <main class="checkout-pagina" role="dialog" aria-modal="true" aria-labelledby="checkoutTitulo">
+            <header class="montar-topo">
+                <button type="button" class="montar-voltar" id="voltarMontagem"><i class="bi bi-arrow-left"></i>
+                    Voltar</button>
+                <img src="img/logo-docura-de-amor.png" class="montar-marca" alt="Logo">
+                <button type="button" class="montar-fechar" id="fecharCheckout" aria-label="Fechar"><i
+                        class="bi bi-x-lg"></i></button>
+            </header>
+
+            <section class="montar-intro checkout-intro">
+                <p class="montar-etiqueta">ÚLTIMA ETAPA</p>
+                <h1 id="checkoutTitulo">Quase tudo pronto para adoçar o seu dia</h1>
+                <p>Escolha como deseja receber e informe seus dados para concluir o pedido.</p>
+            </section>
+
+            <div class="checkout-layout">
+                <form id="formCheckout" class="checkout-form">
+                    <div class="checkout-login-aviso" id="checkoutLoginAviso" hidden>
+                        <i class="bi bi-exclamation-circle"></i>
+                        <div>
+                            <strong>Entre na sua conta para finalizar</strong>
+                            <p>Para concluir o pedido, faça login ou crie sua conta. Seus dados ficam salvos para os próximos pedidos.</p>
+                        </div>
+                        <button type="button" class="montar-botao" id="checkoutAbrirConta">Entrar / criar conta</button>
+                    </div>
+                    <section class="checkout-bloco">
+                        <h2><span>01</span> Como você quer receber?</h2>
+                        <div class="opcoes-recebimento">
+                            <label class="opcao-recebimento">
+                                <input type="radio" name="recebimento" value="entrega" checked>
+                                <span><i class="bi bi-truck"></i><b>Entrega em casa</b><small>Receba no endereço
+                                        informado.</small></span>
+                            </label>
+                            <label class="opcao-recebimento">
+                                <input type="radio" name="recebimento" value="retirada">
+                                <span><i class="bi bi-shop"></i><b>Retirar na loja</b><small>Retire seu pedido em nossa
+                                        loja.</small></span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-bloco">
+                        <h2><span>02</span> Seus dados</h2>
+                        <div class="checkout-campos">
+                            <label class="campo-checkout campo-largo">Nome completo<input name="nome"
+                                    autocomplete="name" required placeholder="Seu nome"></label>
+                            <label class="campo-checkout">WhatsApp<input name="telefone" type="tel" autocomplete="tel"
+                                    required placeholder="(31) 00000-0000"></label>
+                            <label class="campo-checkout">E-mail<input name="email" type="email" autocomplete="email"
+                                    placeholder="seuemail@email.com"></label>
+                            <div class="endereco-entrega" id="enderecoEntrega">
+                                <label class="campo-checkout campo-largo">Rua e número<input name="rua"
+                                        autocomplete="street-address" placeholder="Rua, número"></label>
+                                <label class="campo-checkout">Bairro<input name="bairro"
+                                        placeholder="Seu bairro"></label>
+                                <label class="campo-checkout">CEP<input name="cep" inputmode="numeric"
+                                        placeholder="00000-000"></label>
+                                <label class="campo-checkout">Complemento<input name="complemento"
+                                        placeholder="Apto, bloco, referência"></label>
+                                <label class="campo-checkout">Cidade<input name="cidade"
+                                        placeholder="Belo Horizonte"></label>
+                            </div>
+                            <label class="campo-checkout campo-largo">Data desejada<input name="data" type="date"
+                                    required></label>
+                            <label class="campo-checkout">Horário preferido
+                                <select name="horario" required>
+                                    <option value="">Selecione</option>
+                                    <option>Manhã</option>
+                                    <option>Início da tarde</option>
+                                    <option>Fim da tarde</option>
+                                </select>
+                            </label>
+                        </div>
+                    </section>
+
+                    
+                    <button type="submit" class="montar-botao checkout-finalizar">Finalizar pedido <i
+                            class="bi bi-check2-circle"></i></button>
+                </form>
+
+                <aside class="montar-resumo checkout-resumo">
+                    <div class="resumo-cabecalho">
+                        <div>
+                            <span class="montar-etiqueta">RESUMO</span>
+                            <h2>Seu pedido</h2>
+                        </div>
+                    </div>
+                    <div class="resumo-itens" id="checkoutItens"></div>
+                    <div class="resumo-total">
+                        <span>Total dos produtos</span><strong id="checkoutTotal">R$ 0,00</strong>
+                    </div>
+                    <p class="checkout-frete-nota" id="checkoutFreteNota">Frete, quando aplicável, será combinado com a
+                        loja.</p>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Overlay: Pedido confirmado -->
+    <div class="confirmacao-overlay" id="confirmacaoOverlay" aria-hidden="true">
+        <section class="confirmacao-card" role="dialog" aria-modal="true" aria-labelledby="confirmacaoTitulo">
+            <div class="confirmacao-icone"><i class="bi bi-check-circle"></i></div>
+            <p class="montar-etiqueta">PEDIDO RECEBIDO</p>
+            <h2 id="confirmacaoTitulo">Pedido confirmado!</h2>
+            <p>Recebemos o seu pedido com muito carinho. Em breve entraremos em contato para combinar os detalhes.</p>
+
+            <div id="confirmacaoResumo" class="confirmacao-resumo"></div>
+
+            <button type="button" class="montar-botao" id="btnConfirmacaoFechar">
+                <i class="bi bi-house-heart"></i> Voltar ao site
+            </button>
+        </section>
+    </div>
+
+    <!-- Painel Lateral da Sacola (Mini-Main) -->
+    <div class="sacola-overlay" id="sacolaOverlay" aria-hidden="true">
+        <div class="sacola-painel" role="dialog" aria-modal="true" aria-labelledby="sacolaTitulo">
+            <header class="sacola-cabecalho">
+                <div>
+                    <span class="montar-etiqueta">SEU CARRINHO</span>
+                    <h2 id="sacolaTitulo">Sua Sacola</h2>
+                </div>
+                <button type="button" class="sheet-fechar" id="sacolaFechar" aria-label="Fechar sacola">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </header>
+
+            <div class="sacola-corpo" id="sacolaItens">
+                <p class="resumo-vazio">Sua sacola está vazia.</p>
+            </div>
+
+            <footer class="sacola-rodape">
+                <div class="resumo-total">
+                    <span>Total</span>
+                    <strong id="sacolaTotal">R$ 0,00</strong>
+                </div>
+                <button type="button" class="montar-botao" id="sacolaFinalizar" disabled>
+                    Finalizar Pedido <i class="bi bi-arrow-right"></i>
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Mensagem de Aviso (Toast Personalizado) -->
+    <div class="toast-aviso" id="toastAviso">
+        <i class="bi bi-bag-heart-fill"></i>
+        <span id="toastTexto">Produto adicionado à sacola!</span>
+    </div>
+
+    <!-- Modal de Boas-Vindas (Aviso Inicial sobre Conta) -->
+    <div class="aviso-conta-overlay" id="avisoContaOverlay" aria-hidden="true">
+        <div class="aviso-conta-card" role="dialog" aria-modal="true" aria-labelledby="avisoContaTitulo">
+            <div class="aviso-conta-icone">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <span class="montar-etiqueta">BEM-VINDO À DOÇURA DE AMOR</span>
+            <h2 id="avisoContaTitulo">Deseja criar sua conta agora?</h2>
+            <p>Criando sua conta, seus dados ficam salvos para facilitar e agilizar o fechamento dos seus pedidos!</p>
+            <div class="aviso-conta-botoes">
+                <button type="button" class="montar-botao" id="btnCriarContaAgora">
+                    <i class="bi bi-person-plus"></i> Criar minha conta
+                </button>
+                <button type="button" class="btn-mais-tarde" id="btnContaMaisTarde">
+                    Deixar para mais tarde
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Painel Lateral da Conta / Minha Conta (Mini Main Lateral Direita) -->
+    <div class="conta-overlay" id="contaOverlay" aria-hidden="true">
+        <aside class="conta-painel" role="dialog" aria-modal="true" aria-labelledby="contaTitulo">
+            <header class="conta-cabecalho">
+                <div>
+                    <span class="montar-etiqueta">ÁREA DO CLIENTE</span>
+                    <h2 id="contaTitulo">Minha Conta</h2>
+                </div>
+                <button type="button" class="sheet-fechar" id="contaFechar" aria-label="Fechar conta">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </header>
+
+            <div class="conta-corpo">
+                <!-- Visão 1: Formulário de Cadastro / Login -->
+                <div id="visaoDeslogado" class="conta-visao ativo">
+                    <div class="conta-boas-vindas">
+                        <h3>Crie sua conta</h3>
+                        <p>Preencha uma vez e deixe seus dados salvos para fechar os próximos pedidos mais rápido.</p>
+                    </div>
+
+                    <form id="formContaCliente" class="conta-form" novalidate>
+                        <div class="campo-checkout campo-largo">
+                            <label for="usr-nome">Nome completo</label>
+                            <input type="text" id="usr-nome" name="nome" placeholder="Como podemos te chamar?" required
+                                autocomplete="name">
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <div class="campo-checkout campo-largo">
+                            <label for="usr-telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="usr-telefone" name="telefone" placeholder="(31) 90000-0000" required
+                                autocomplete="tel">
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <div class="campo-checkout campo-largo">
+                            <label for="usr-email">E-mail</label>
+                            <input type="email" id="usr-email" name="email" placeholder="seuemail@exemplo.com" required
+                                autocomplete="email">
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <div class="campo-checkout campo-largo">
+                            <label for="usr-senha">Senha</label>
+                            <input type="password" id="usr-senha" name="senha" placeholder="Mínimo de 6 caracteres" required
+                                autocomplete="new-password" minlength="6">
+                            <span class="contato-erro" aria-live="polite"></span>
+                        </div>
+
+                        <button type="submit" class="montar-botao">
+                            <i class="bi bi-check-circle"></i> Criar minha conta
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Visão 2: Perfil Logado -->
+                <div id="visaoLogado" class="conta-visao">
+                    <div class="perfil-card">
+                        <div class="perfil-avatar">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <h3 id="perfilNome">Nome do Cliente</h3>
+                        <p id="perfilEmail">email@exemplo.com</p>
+                        <span class="perfil-status"><i class="bi bi-shield-check"></i> Conta Ativa & Salva</span>
+                    </div>
+
+                    <div class="perfil-detalhes">
+                        <div class="perfil-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <small>Telefone / WhatsApp</small>
+                                <strong id="perfilTelefone">(00) 00000-0000</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Histórico de Pedidos -->
+                    <div class="perfil-secao-historico">
+                        <h4><i class="bi bi-clock-history"></i> Meu Histórico de Pedidos</h4>
+                        <div id="listaHistoricoPedidos" class="historico-pedidos-lista">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+
+                    <div class="perfil-acoes">
+                        <button type="button" class="btn-sair-conta" id="btnSairConta">
+                            <i class="bi bi-box-arrow-right"></i> Sair da conta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
