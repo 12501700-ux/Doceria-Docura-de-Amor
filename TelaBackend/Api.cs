@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 // .NET Framework 4.x | NuGet: Newtonsoft.Json | Referência: System.Net.Http
 public static class Api
 {
-    static readonly HttpClient Http = new HttpClient { BaseAddress = new Uri("http://localhost:5000/") };
+    static readonly HttpClient Http = new HttpClient { BaseAddress = new Uri("http://leonardomagno.duckdns.org/api/") };
 
     static StringContent Json(object o)
     {
